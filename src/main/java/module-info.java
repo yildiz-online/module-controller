@@ -24,6 +24,8 @@
 
 open module be.yildizgames.module.controller {
 
+    uses be.yildizgames.module.controller.ControllerEngine;
+
     exports be.yildizgames.module.controller;
 }
 

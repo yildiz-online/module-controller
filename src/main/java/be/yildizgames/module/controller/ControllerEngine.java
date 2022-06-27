@@ -26,12 +26,19 @@
 
 package be.yildizgames.module.controller;
 
+import java.util.ServiceLoader;
+
 /**
  * Manage the controllers.
  *
  * @author Grégory Van den Borre
  */
-public interface ControllerEngine {
+public interface ControllerEngine extends Runnable {
+
+    static ControllerEngine getEngine() {
+        ServiceLoader<ControllerEngine> services = ServiceLoader.load(ControllerEngine.class);
+        return services.findFirst().orElseThrow();
+    }
 
     /**
      * Provide the 1st controller.
