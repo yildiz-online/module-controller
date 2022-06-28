@@ -31,10 +31,10 @@ import be.yildizgames.module.controller.ControllerMapper;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class DefaultControllerMapperTest {
+class DefaultControllerMapperTest {
 
     @Test
-    public void happyFlow() {
+    void happyFlow() {
         ControllerMapper mapper = new DefaultControllerMapper();
         Assertions.assertEquals(ControllerInput.BUTTON1, mapper.button1());
         Assertions.assertEquals(ControllerInput.BUTTON2, mapper.button2());
