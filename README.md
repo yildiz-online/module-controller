@@ -1,7 +1,7 @@
-# Yildiz-Engine module-controller-jampad.
+# Yildiz-Engine module-controller.
 
-This is the official repository of the Controller jampad Module, part of the Yildiz-Engine project. This module is the
-the jampad implementation for the controller module.
+This is the official repository of the Controller Module, part of the Yildiz-Engine project. This module is the
+the interface to use for the controller module.
 
 ## Features
 
@@ -27,7 +27,7 @@ Wiki:
 https://yildiz.atlassian.net/wiki
 
 Quality report:
-https://sonarcloud.io/dashboard/index/be.yildiz-games:module-controller-jampad
+https://sonarcloud.io/dashboard/index/be.yildiz-games:module-controller
 
 ## License
 
