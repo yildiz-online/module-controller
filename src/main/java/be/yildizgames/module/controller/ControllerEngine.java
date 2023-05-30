@@ -40,6 +40,8 @@ public interface ControllerEngine extends Runnable {
         return services.findFirst().orElseThrow();
     }
 
+    ControllerEngine addListener(ControllerEngineStatusListener l);
+
     /**
      * Provide the 1st controller.
      *
