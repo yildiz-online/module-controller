@@ -16,6 +16,7 @@
 
 package be.yildizgames.module.controller;
 
+import java.util.Collection;
 import java.util.ServiceLoader;
 
 /**
@@ -30,35 +31,21 @@ public interface ControllerEngine extends Runnable {
         return services.findFirst().orElseThrow();
     }
 
-    ControllerEngine addListener(ControllerEngineStatusListener l);
+    ControllerEngine addEngineStatusListener(ControllerEngineStatusListener l);
 
     /**
-     * Provide the 1st controller.
+     * register a listener to receive event from the controller.
      *
-     * @return The first assigned controller.
+     * @param l Controller listener.
      */
-    Controller getController1();
+    void addControllerListener(ControllerListener l);
 
     /**
-     * Provide the 2nd controller.
+     * Provide the connected controllers.
      *
-     * @return The second assigned controller.
+     * @return The list of connected controllers.
      */
-    Controller getController2();
-
-    /**
-     * Provide the 3rd controller.
-     *
-     * @return The third assigned controller.
-     */
-    Controller getController3();
-
-    /**
-     * Provide the 4th controller.
-     *
-     * @return The fourth assigned controller.
-     */
-    Controller getController4();
+    Collection<? extends Controller> getControllers();
 
     void reopen();
 

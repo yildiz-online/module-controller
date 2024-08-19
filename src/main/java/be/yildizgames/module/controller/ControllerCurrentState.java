@@ -52,6 +52,34 @@ public interface ControllerCurrentState {
     boolean isButton4Pressed();
 
     /**
+     * Check button L1.
+     *
+     * @return True if the button L1 is currently pressed.
+     */
+    boolean isButtonL1Pressed();
+
+    /**
+     * Check button L2.
+     *
+     * @return True if the button L2 is currently pressed.
+     */
+    boolean isButtonL2Pressed();
+
+    /**
+     * Check button R1.
+     *
+     * @return True if the button R1 is currently pressed.
+     */
+    boolean isButtonR1Pressed();
+
+    /**
+     * Check button R2.
+     *
+     * @return True if the button R2 is currently pressed.
+     */
+    boolean isButtonR2Pressed();
+
+    /**
      * Check button start.
      *
      * @return True if the button start is currently pressed.
