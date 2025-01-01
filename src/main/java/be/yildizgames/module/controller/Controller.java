@@ -25,6 +25,8 @@ public interface Controller {
 
     String model();
 
+    String guid();
+
     int id();
 
     ControllerCurrentState currentState();
