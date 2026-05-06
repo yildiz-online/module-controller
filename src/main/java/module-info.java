@@ -14,6 +14,11 @@
  *
  */
 
+/**
+ * This module provides user input(like joystick, game controller,...) capabilities, it needs an implementation module to be used.
+ *
+ * @author Grégory Van den Borre
+ */
 open module be.yildizgames.module.controller {
 
     uses be.yildizgames.module.controller.ControllerEngine;

@@ -20,7 +20,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <name>Yildiz-Engine Module Controller</name>
-  <description>Controller module.</description>
+  <description>Module for user input(like joystick, game controller,...), it needs an implementation module to be used.</description>
   <url>https://engine.yildiz-games.be</url>
 
   <packaging>jar</packaging>

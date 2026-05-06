@@ -17,7 +17,7 @@
 package be.yildizgames.module.controller;
 
 /**
- * Map the keys to an action.
+ * Map the button to another button.
  *
  * @author Gregory Van den Borre
  */
