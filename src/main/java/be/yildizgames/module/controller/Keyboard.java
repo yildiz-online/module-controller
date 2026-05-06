@@ -17,6 +17,8 @@
 package be.yildizgames.module.controller;
 
 /**
+ * To use the keyboard as controller.
+ *
  * @author Grégory Van den Borre
  */
 public class Keyboard implements Controller {
@@ -94,17 +96,17 @@ public class Keyboard implements Controller {
     };
 
     @Override
-    public final String model() {
+    public final String modelName() {
         return "Keyboard";
     }
 
     @Override
-    public final String guid() {
+    public final String modelGuid() {
         return "000000000000000000000000000000000";
     }
 
     @Override
-    public final int id() {
+    public final int playerId() {
         return 99999;
     }
 
