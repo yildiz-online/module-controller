@@ -1,6 +1,6 @@
 /*
  * This file is part of the Yildiz-Engine project, licenced under the MIT License  (MIT)
- *  Copyright (c) 2019-2023 Grégory Van den Borre
+ *  Copyright (c) 2024 Grégory Van den Borre
  *  More infos available: https://engine.yildiz-games.be
  *  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
  *  documentation files (the "Software"), to deal in the Software without restriction, including without limitation
@@ -17,49 +17,11 @@
 package be.yildizgames.module.controller;
 
 /**
- * Map the button to another button.
- *
- * @author Gregory Van den Borre
+ * @author Grégory Van den Borre
  */
-public interface ControllerMapper {
+public class KeyboardCurrentState {
 
-    default ControllerInput button1() {
-        return ControllerInput.BUTTON1;
-    }
-
-    default ControllerInput button2() {
-        return ControllerInput.BUTTON2;
-    }
-
-    default ControllerInput button3() {
-        return ControllerInput.BUTTON3;
-    }
-
-    default ControllerInput button4() {
-        return ControllerInput.BUTTON4;
-    }
-
-    default ControllerInput buttonL1() {
-        return ControllerInput.BUTTON_L1;
-    }
-
-    default ControllerInput buttonR1() {
-        return ControllerInput.BUTTON_R1;
-    }
-
-    default ControllerInput buttonL2() {
-        return ControllerInput.BUTTON_L2;
-    }
-
-    default ControllerInput buttonR2() {
-        return ControllerInput.BUTTON_R2;
-    }
-
-    default ControllerInput buttonStart() {
-        return ControllerInput.START;
-    }
-
-    default ControllerInput buttonSelect() {
-        return ControllerInput.SELECT;
+    public KeyboardCurrentState() {
+        super();
     }
 }

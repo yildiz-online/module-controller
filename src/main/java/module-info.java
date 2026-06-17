@@ -20,6 +20,7 @@
  * @author Grégory Van den Borre
  */
 open module be.yildizgames.module.controller {
+    requires be.yildizgames.common.input;
 
     uses be.yildizgames.module.controller.ControllerEngine;
 
