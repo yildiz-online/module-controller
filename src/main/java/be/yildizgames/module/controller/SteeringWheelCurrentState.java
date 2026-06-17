@@ -17,47 +17,30 @@
 package be.yildizgames.module.controller;
 
 /**
- * Possible input on the controller.
+ * Provide the steering wheel current state, this object is internally mutable, so there is no need of a new instance to have the latest state.
  *
  * @author Grégory Van den Borre
  */
-public enum ControllerInput {
+public interface SteeringWheelCurrentState extends ControllerCurrentState {
 
     /**
-     * Button 1.
+     * Check direction.
+     *
+     * @return The direction angle, negative for turn left, 0 for center, positive for turn right.
      */
-    BUTTON1,
+    double directionAngle();
 
     /**
-     * Button 2.
+     * Check brake pedal.
+     *
+     * @return 0 for no pedal press, positive value for braking force.
      */
-    BUTTON2,
+    double brakeForce();
 
     /**
-     * Button 3.
+     * Check accelerator pedal.
+     *
+     * @return 0 for no pedal press, positive value for acceleration force.
      */
-    BUTTON3,
-
-    /**
-     * Button 4.
-     */
-    BUTTON4,
-
-    BUTTON_L1,
-
-    BUTTON_R1,
-
-    BUTTON_L2,
-
-    BUTTON_R2,
-
-    /**
-     * Button start.
-     */
-    START,
-
-    /**
-     * Button select.
-     */
-    SELECT;
+    double acceleratorForce();
 }
