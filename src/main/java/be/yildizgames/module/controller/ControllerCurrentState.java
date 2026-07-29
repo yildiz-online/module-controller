@@ -120,4 +120,12 @@ public interface ControllerCurrentState {
      * @return True if the pas right is currently pressed.
      */
     boolean isPadRightPressed();
+
+    double leftStickAngle();
+
+    double rightStickAngle();
+
+    boolean isRightStickPressed();
+
+    boolean isLeftStickPressed();
 }
