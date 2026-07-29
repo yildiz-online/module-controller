@@ -40,6 +40,8 @@ public interface ControllerEngine extends Runnable {
      */
     void addControllerListener(ControllerListener l);
 
+    void addKeyboardListener(KeyboardListener l);
+
     /**
      * Provide the connected controllers.
      *
