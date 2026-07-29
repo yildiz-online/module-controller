@@ -19,9 +19,11 @@ package be.yildizgames.module.controller;
 /**
  * @author Grégory Van den Borre
  */
-public class KeyboardCurrentState {
+public interface KeyboardCurrentState {
 
-    public KeyboardCurrentState() {
-        super();
-    }
+    boolean isAKeyPressed();
+
+    boolean isBKeyPressed();
+
+    boolean isCKeyPressed();
 }
